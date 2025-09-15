@@ -19,7 +19,16 @@
             width: 200px;
             height: 50px;
         }
-
+        .header-fixed{
+      position: fixed;
+      background-color: white;
+      top: 0;
+      width: 100%;
+      z-index: 1;
+    }
+    .margin100{
+      margin-top: 150px;
+    }
         .width {
             width: 100%;
             height: 40px;
@@ -372,239 +381,217 @@
 </head>
 <body>
 
-<p class="text-center  bg-danger bg-gradient underline bg-opacity-50">Enjoy Flat 5% Cashback On Your Order
-        ! </p>
-    <section>
-        <div class="d-flex justify-content-between pt-3 pb-3 ms-3 me-3">
-            <div>
-                <nav class="navbar navbar-expand-lg hidden">
-                    <div class="container-fluid">
-                        <a class="navbar-brand image" href="#"><img height="100%" width="100%"
-                                src="https://th.bing.com/th/id/OIP.nrXgb78qTO98djDIhDTOrgHaD4?w=342&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7"
-                                alt=""></a>
-                    </div>
-                </nav>
-            </div>
-            <div class="d-flex gap-3  justify-content-center align-items-center">
-                <div class="hidden">
-                    <button class="btn btn-primary dropdown-toggle" type="button" data-bs-toggle="offcanvas"
-                        data-bs-target="#offcanvasTop" aria-controls="offcanvasTop">Where to Deliver? <br> Update
-                        Delivery
-                        Pincode</button>
 
-                    <div class="offcanvas offcanvas-top" tabindex="-1" id="offcanvasTop"
-                        aria-labelledby="offcanvasTopLabel">
-                        <div class="offcanvas-header">
-                            <h5 class="offcanvas-title" id="offcanvasTopLabel">Enter Pincode</h5>
-                            <button type="button" class="btn-close" data-bs-dismiss="offcanvas"
-                                aria-label="Close"></button>
-                        </div>
-                        <div class="offcanvas-body">
-                            <div class="input-group mb-3">
-                                <div class="form-floating">
-                                    <input type="text" class="form-control" id="floatingInputGroup1"
-                                        placeholder="Username">
-                                    <label for="floatingInputGroup1">Enter Your Pincode</label>
-                                </div>
-                                <span class="input-group-text "><a href="index.html"
-                                        class="underline-none">Update</a></span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="hidden">
-                    <div class="form-floating  w-100-">
-                        <input type="text" class="form-control" id="floatingPassword">
-                        <label for="floatingPassword">Search For Product</label>
-                    </div>
-                </div>
-            </div>
-
-
-            <div class="d-flex  justify-content-center align-items-center gap-3">
-                <div class="hidden">
-                    <div class="fs-3 d-flex icone justify-content-center"><i class="fa-solid fa-store"></i></div>
-                    <div>Stores</div>
-                </div>
-                <div class="hidden">
-                    <div class="fs-3 d-flex icone justify-content-center"><i class="fa-solid fa-user"></i></div>
-                    <div>Account</div>
-                </div>
-                <div class="hidden">
-                    <div class="fs-3 d-flex icone justify-content-center"><i class="fa-solid fa-heart"></i></div>
-                    <div>Wishlist</div>
-                </div>
-                <div class="hidden">
-                    <div class="fs-3 d-flex icone justify-content-center"><i class="fa-solid fa-cart-shopping"></i>
-                    </div>
-                    <div>Cart</div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section>
-        <div class="navbar-123">
-            <nav class="navbar navbar-expand-lg ">
-                <div class="container-fluid">
-                    <a class="navbar-brand image " href="#"><img height="100%" width="100%"
-                            src="https://th.bing.com/th/id/OIP.nrXgb78qTO98djDIhDTOrgHaD4?w=342&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7"
-                            alt=""></a>
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <div class="collapse navbar-collapse" id="navbarNav">
-                        <ul class="navbar-nav">
-                            <li class="nav-item">
-                                <a class="nav-link active" aria-current="page" href="#">
-                                    <div>
-                                        <div class="form-floating  w-100-">
-                                            <input type="text" class="form-control" id="floatingPassword">
-                                            <label for="floatingPassword">Search For Product</label>
-                                        </div>
-                                    </div>
-                                </a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">Stores</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">Account</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">Wishlist</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">Cart</a>
-                            </li>
-
-                        </ul>
-                    </div>
-
-                </div>
-            </nav>
-        </div>
-    </section>
-
-
-
-
-
-    <section>
-
-        <link href="https://fonts.googleapis.com/css?family=Arvo&display=swap" rel="stylesheet">
-
-        <nav role="navigation" class="primary-navigation">
-            <div class="d-flex flex-wrap gap-2 margin justify-content-center">
-                <div class="dropdown hidden-menu-2">
-                    <button class="btn font-size dropdown-toggle" type="button" data-bs-toggle="dropdown"
-                        aria-expanded="false">
-                        Shop by Category
-                    </button>
-                    <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="all.html">All</a></li>
-                        <li><a class="dropdown-item" href="ring.html">Rings</a></li>
-                        <li><a class="dropdown-item" href="necklaces.html">Necklaces & Pendants</a></li>
-                        <li><a class="dropdown-item" href="bracelets.html">Bracelets</a></li>
-                        <li><a class="dropdown-item" href="#">Earrings</a></li>
-                        <li><a class="dropdown-item" href="#">Anklets</a></li>
-                        <li><a class="dropdown-item" href="#">Other Categories</a></li>
-                    </ul>
-                </div>
-                <div class="dropdown hidden-menu-2">
-                    <button class="btn font-size underline" type="button" data-bs-toggle="dropdown"
-                        aria-expanded="false">
-                        Gold with Lab Diamonds
-                    </button>
-                </div>
-                <div class="dropdown hidden-menu-2">
-                    <button class="btn font-size underline" type="button" data-bs-toggle="dropdown"
-                        aria-expanded="false">
-                        Giva Gift Card
-                    </button>
-                </div>
-                <div class="dropdown hidden-menu-2">
-                    <button class="btn font-size dropdown-toggle" type="button" data-bs-toggle="dropdown"
-                        aria-expanded="false">
-                        Gift Store
-                    </button>
-                    <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="#">GIVA Gift Store</a></li>
-                        <li><a class="dropdown-item" href="#">Shop by Occassion</a></li>
-                        <li><a class="dropdown-item" href="#">Shop by Theme</a></li>
-                        <li><a class="dropdown-item" href="#">Shop by Recipient</a></li>
-                        <li><a class="dropdown-item" href="#">Shop by Price</a></li>
-                    </ul>
-                </div>
-                <div class="dropdown hidden-menu-2">
-                    <button class="btn font-size dropdown-toggle" type="button" data-bs-toggle="dropdown"
-                        aria-expanded="false">
-                        Men's Jewellery
-                    </button>
-                    <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="#">All</a></li>
-                        <li><a class="dropdown-item" href="#">Rings</a></li>
-                        <li><a class="dropdown-item" href="#">Pendants</a></li>
-                        <li><a class="dropdown-item" href="#">Bracelets</a></li>
-                        <li><a class="dropdown-item" href="#">Earrings</a></li>
-                        <li><a class="dropdown-item" href="#">Chains</a></li>
-                        <li><a class="dropdown-item" href="#">Sets</a></li>
-                    </ul>
-                </div>
-                <div class="dropdown hidden-menu-2">
-                    <button class="btn font-size dropdown-toggle" type="button" data-bs-toggle="dropdown"
-                        aria-expanded="false">
-                        Latest Collections
-                    </button>
-                    <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="#">Gemstone Collection</a></li>
-                        <li><a class="dropdown-item" href="#">Piercing Collection</a></li>
-                        <li><a class="dropdown-item" href="#">DIVA Collection</a></li>
-                        <li><a class="dropdown-item" href="#">Valentine's Collection</a></li>
-                        <li><a class="dropdown-item" href="#">Sky High</a></li>
-                        <li><a class="dropdown-item" href="#">Wings of Wonder</a></li>
-                        <li><a class="dropdown-item" href="#">Cherry Pop Collection</a></li>
-                        <li><a class="dropdown-item" href="#">Love in Paris</a></li>
-                        <li><a class="dropdown-item" href="#">Convertible Collection</a></li>
-                        <li><a class="dropdown-item" href="#">Just Arrived</a></li>
-                    </ul>
-                </div>
-                <div class="dropdown hidden-menu-2">
-                    <button class="btn font-size dropdown-toggle" type="button" data-bs-toggle="dropdown"
-                        aria-expanded="false">
-                        More at GIVA
-                    </button>
-                    <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="#">Media Mentions</a></li>
-                        <li><a class="dropdown-item" href="#">Corporate Partnerships</a></li>
-                        <li><a class="dropdown-item" href="#">Jewellery Care</a></li>
-                        <li><a class="dropdown-item" href="#">GIVA Care</a></li>
-                        <li><a class="dropdown-item" href="#">GIVA Blogs</a></li>
-                        <li><a class="dropdown-item" href="#">Support & FAQs</a></li>
-                    </ul>
-                </div>
-
-            </div>
+    <section class="header-fixed">
+    <div class="d-flex justify-content-between pt-3 pb-3 ms-3 me-3">
+      <div>
+        <nav class="navbar navbar-expand-lg hidden">
+          <div class="container-fluid">
+            <a class="navbar-brand image" href="#"><img height="100%" width="100%"
+                src="https://th.bing.com/th/id/OIP.nrXgb78qTO98djDIhDTOrgHaD4?w=342&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7"
+                alt=""></a>
+          </div>
         </nav>
-    </section>
+      </div>
+      <div class="d-flex gap-3  justify-content-center align-items-center">
+        <div class="hidden">
+          <button class="btn btn-primary dropdown-toggle" type="button" data-bs-toggle="offcanvas"
+            data-bs-target="#offcanvasTop" aria-controls="offcanvasTop">Where to Deliver? <br> Update
+            Delivery
+            Pincode</button>
 
-    <section>
-        <select class="form-select hidden-menu form-select-sm" aria-label="Small select example">
-            <option selected> Shop by Category</option>
-            <option value="1">Gold with Lab Diamonds</option>
-            <option value="2">Giva Gift Card</option>
-            <option value="3">Gift Store</option>
-            <option value="4">Men's Jewellery</option>
-            <option value="5">Latest Collections</option>
-            <option value="6">More at GIVA</option>
-        </select>
-    </section>
-    <section>
+          <div class="offcanvas offcanvas-top" tabindex="-1" id="offcanvasTop" aria-labelledby="offcanvasTopLabel">
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title" id="offcanvasTopLabel">Enter Pincode</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+              <div class="input-group mb-3">
+                <div class="form-floating">
+                  <input type="text" class="form-control" id="floatingInputGroup1" placeholder="Username">
+                  <label for="floatingInputGroup1">Enter Your Pincode</label>
+                </div>
+                <span class="input-group-text "><a href="index.html" class="underline-none">Update</a></span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="hidden">
+          <div class="form-floating  w-100-">
+            <input type="text" class="form-control" id="floatingPassword">
+            <label for="floatingPassword">Search For Product</label>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="d-flex  justify-content-center align-items-center gap-3">
+        <div class="hidden">
+          <div class="fs-3 d-flex icone justify-content-center"><i class="fa-solid fa-store"></i></div>
+          <div>Stores</div>
+        </div>
+        <div class="hidden">
+          <div class="fs-3 d-flex icone justify-content-center"><i class="fa-solid fa-user"></i></div>
+          <div>Account</div>
+        </div>
+        <div class="hidden">
+          <div class="fs-3 d-flex icone justify-content-center"><i class="fa-solid fa-heart"></i></div>
+          <div>Wishlist</div>
+        </div>
+        <div class="hidden">
+          <div class="fs-3 d-flex icone justify-content-center"><i class="fa-solid fa-cart-shopping"></i></div>
+          <div>Cart</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="navbar-123">
+      <nav class="navbar navbar-expand-lg ">
+        <div class="container-fluid">
+          <a class="navbar-brand image " href="#"><img height="100%" width="100%"
+              src="https://th.bing.com/th/id/OIP.nrXgb78qTO98djDIhDTOrgHaD4?w=342&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7"
+              alt=""></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">
+                  <div>
+                    <div class="form-floating  w-100-">
+                      <input type="text" class="form-control" id="floatingPassword">
+                      <label for="floatingPassword">Search For Product</label>
+                    </div>
+                  </div>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Stores</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Account</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Wishlist</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Cart</a>
+              </li>
+
+            </ul>
+          </div>
+
+        </div>
+      </nav>
+    </div>
+
+    <link href="https://fonts.googleapis.com/css?family=Arvo&display=swap" rel="stylesheet">
+
+    <nav role="navigation" class="primary-navigation">
+      <div class="d-flex flex-wrap gap-2 margin justify-content-center">
+        <div class="dropdown hidden-menu-2">
+          <button class="btn font-size dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Shop by Category
+          </button>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="all.html">All</a></li>
+            <li><a class="dropdown-item" href="ring.html">Rings</a></li>
+            <li><a class="dropdown-item" href="necklaces.html">Necklaces & Pendants</a></li>
+            <li><a class="dropdown-item" href="bracelets.html">Bracelets</a></li>
+            <li><a class="dropdown-item" href="earrings.html">Earrings</a></li>
+            <li><a class="dropdown-item" href="anklets.html">Anklets</a></li>
+          </ul>
+        </div>
+        <div class="dropdown hidden-menu-2">
+          <button class="btn font-size underline" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Gold with Lab Diamonds
+          </button>
+        </div>
+        <div class="dropdown hidden-menu-2">
+          <button class="btn font-size underline" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Giva Gift Card
+          </button>
+        </div>
+        <div class="dropdown hidden-menu-2">
+          <button class="btn font-size dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Gift Store
+          </button>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="givagiftstore.html">GIVA Gift Store</a></li>
+            <li><a class="dropdown-item" href="#">Shop by Occassion</a></li>
+            <li><a class="dropdown-item" href="#">Shop by Theme</a></li>
+            <li><a class="dropdown-item" href="#">Shop by Recipient</a></li>
+            <li><a class="dropdown-item" href="#">Shop by Price</a></li>
+          </ul>
+        </div>
+        <div class="dropdown hidden-menu-2">
+          <button class="btn font-size dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Men's Jewellery
+          </button>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">All</a></li>
+            <li><a class="dropdown-item" href="#">Rings</a></li>
+            <li><a class="dropdown-item" href="#">Pendants</a></li>
+            <li><a class="dropdown-item" href="#">Bracelets</a></li>
+            <li><a class="dropdown-item" href="#">Earrings</a></li>
+            <li><a class="dropdown-item" href="#">Chains</a></li>
+            <li><a class="dropdown-item" href="#">Sets</a></li>
+          </ul>
+        </div>
+        <div class="dropdown hidden-menu-2">
+          <button class="btn font-size dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Latest Collections
+          </button>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Gemstone Collection</a></li>
+            <li><a class="dropdown-item" href="#">Piercing Collection</a></li>
+            <li><a class="dropdown-item" href="#">DIVA Collection</a></li>
+            <li><a class="dropdown-item" href="#">Valentine's Collection</a></li>
+            <li><a class="dropdown-item" href="#">Sky High</a></li>
+            <li><a class="dropdown-item" href="#">Wings of Wonder</a></li>
+            <li><a class="dropdown-item" href="#">Cherry Pop Collection</a></li>
+            <li><a class="dropdown-item" href="#">Love in Paris</a></li>
+            <li><a class="dropdown-item" href="#">Convertible Collection</a></li>
+            <li><a class="dropdown-item" href="#">Just Arrived</a></li>
+          </ul>
+        </div>
+        <div class="dropdown hidden-menu-2">
+          <button class="btn font-size dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+            More at GIVA
+          </button>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Media Mentions</a></li>
+            <li><a class="dropdown-item" href="#">Corporate Partnerships</a></li>
+            <li><a class="dropdown-item" href="#">Jewellery Care</a></li>
+            <li><a class="dropdown-item" href="#">GIVA Care</a></li>
+            <li><a class="dropdown-item" href="#">GIVA Blogs</a></li>
+            <li><a class="dropdown-item" href="#">Support & FAQs</a></li>
+          </ul>
+        </div>
+
+      </div>
+    </nav>
+  </section>
 
 
 
-        <section>
+
+
+
+  <section>
+    <select class="form-select hidden-menu form-select-sm" aria-label="Small select example">
+      <option selected>Open this select menu</option>
+      <option value="1">One</option>
+      <option value="2">Two</option>
+      <option value="3">Three</option>
+    </select>
+  </section>
+
+
+
+        <section class="margin100">
 
             <div id="carouselExampleAutoplaying" class="carousel slide mt-3" data-bs-ride="carousel">
                 <div class="carousel-inner">
